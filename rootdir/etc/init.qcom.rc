@@ -68,17 +68,13 @@ on boot
     chmod 0660 /sys/module/hci_smd/parameters/hcismd_set
     chmod 0660 /sys/class/rfkill/rfkill0/state
     chmod 0660 /proc/bluetooth/sleep/proto
-    chown bluetooth bluetooth /dev/ttyHS0
     chmod 0660 /sys/module/hci_uart/parameters/ath_lpm
     chmod 0660 /sys/module/hci_uart/parameters/ath_btwrite
-    chmod 0660 /dev/ttyHS0
 
     #Bluetooth UART dev
     chown bluetooth bluetooth /sys/devices/f995e000.uart/clock
     chmod 0660 /sys/devices/f995e000.uart/clock
 
-    chmod 0660 /dev/ttyHS2
-    chown bluetooth bluetooth /dev/ttyHS2
 
     #Basic permissions
     chown root system /dev/socket
@@ -228,8 +224,6 @@ on post-fs-data
     chown radio bluetooth /efs/bluetooth/bt_addr
     chmod 0640 /efs/bluetooth/bt_addr
     restorecon_recursive /efs/bluetooth
-    chown bluetooth bluetooth /dev/ttyHS0
-    chmod 0660 /dev/ttyHS0
     chmod 0660 /sys/class/rfkill/rfkill0/state
     chown bluetooth bluetooth /sys/class/rfkill/rfkill0/state
     chown bluetooth bluetooth /sys/class/rfkill/rfkill0/type
@@ -239,8 +233,6 @@ on post-fs-data
     chmod 0220 /proc/bluetooth/sleep/btwrite
     chown bluetooth bluetooth /proc/bluetooth/sleep/lpm
     chown bluetooth bluetooth /proc/bluetooth/sleep/btwrite
-    chmod 0600 /dev/btlock
-    chown bluetooth bluetooth /dev/btlock
 
     # Power Hal Permissions
     chown system system /sys/class/input/input2/enabled
@@ -307,18 +299,12 @@ on post-fs-data
     chown system system /sys/devices/virtual/mdnie/mdnie/scenario
 
 # Broadcom NFC
-    chmod 0600 /dev/bcm2079x
-    chown nfc nfc /dev/bcm2079x
     mkdir /data/bcmnfc
     mkdir /data/bcmnfc/param
     chmod 0700 /data/bcmnfc
     chmod 0700 /data/bcmnfc/param
     chown nfc nfc /data/bcmnfc
     chown nfc nfc /data/bcmnfc/param
-
-# NFC NXP
-    chmod 0660 /dev/pn547
-    chown nfc nfc /dev/pn547
 
 # GPIO DVS
     chown radio system /sys/class/secgpio_check/secgpio_check_all/secgpio_ctrl
