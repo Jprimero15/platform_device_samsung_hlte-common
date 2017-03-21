@@ -114,10 +114,6 @@ on post-fs-data
     chown system radio /sys/class/host_notify/usb_otg/booster
     chmod 0660 /sys/class/host_notify/usb_otg/booster
 
-    #Essential node for usbservice
-    mkdir /dev/bus/ 755 root root
-    mkdir /dev/bus/usb 755 root root
-
     # wifi
     mkdir /efs/wifi 0775 system system
 
@@ -186,7 +182,7 @@ on boot
     chmod 0444 /sys/devices/system/soc/soc0/soc_pvs
 
     # Auto Brightness
-    chown system system  /sys/class/backlight/panel/auto_brightness
+    chown system system /sys/class/backlight/panel/auto_brightness
     chmod 0660 /sys/class/backlight/panel/auto_brightness
 
     # LCD mdnie and panel work
@@ -237,10 +233,6 @@ on boot
     chown system system /sys/class/lcd/panel/alpm
     chmod 0660 /sys/class/lcd/panel/alpm
 
-    # Auto Brightness
-    chown system system  /sys/class/backlight/panel/auto_brightness
-    chmod 0660 /sys/class/backlight/panel/auto_brightness
-
     # Permissions for TCON
     chown system system /sys/class/tcon/tcon/lux
     chown system system /sys/class/tcon/tcon/auto_br
@@ -256,9 +248,9 @@ on boot
     chown system radio /sys/class/host_notify/usb_otg/booster
     chmod 0660 /sys/class/host_notify/usb_otg/booster
 
-#Essential node for usbservice
-    mkdir /dev/bus/ 755 root root
-    mkdir /dev/bus/usb 755 root root
+    #Essential node for usbservice
+    mkdir /dev/bus/ 0755 root root
+    mkdir /dev/bus/usb 0755 root root
 
 # Permissions for InputDevices.
     chown system radio /sys/class/sec/tsp/cmd
