@@ -305,6 +305,10 @@ on post-fs-data
     rm /data/data/com.android.providers.telephony/databases
     rm /data/data/com.android.providers.telephony/shared_prefs
 
+    # Create directories for perfd
+    mkdir /data/misc/perfd 2755 root system
+    mkdir /data/system/perfd 2770 root system
+
     setprop vold.post_fs_data_done 1
 
 service irsc_util /vendor/bin/irsc_util "/vendor/etc/sec_config"
