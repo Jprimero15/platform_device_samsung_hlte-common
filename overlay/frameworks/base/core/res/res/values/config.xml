@@ -312,4 +312,7 @@ device specific handlers,
         <item>org.aospextended.settings.device.KeyHandler</item>
     </string-array>
 
+    <!-- Whether device ignores the RSSNR signal implementation -->
+    <bool name="config_ignoreRssnrSignalLevel">true</bool>
+
 </resources>
