@@ -17,6 +17,9 @@
 
 $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 
+# Official AEX
+EXTENDED_BUILD_TYPE := OFFICIAL
+
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay-lineage
@@ -51,6 +54,9 @@ PRODUCT_PACKAGES += \
 # Gestures
 #PRODUCT_PACKAGES += \
 #    org.lineageos.keyhandler
+
+# Jelly
+TARGET_USE_JELLY := true
 
 # Input device
 PRODUCT_COPY_FILES += \
