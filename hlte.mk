@@ -47,6 +47,13 @@ PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 PRODUCT_PACKAGES += \
     DeviceSettings
 
+# Telephony
+PRODUCT_PACKAGES += \
+    telephony-ext
+
+PRODUCT_BOOT_JARS += \
+    telephony-ext
+
 # FlipFlap
 #PRODUCT_PACKAGES += \
 #    FlipFlap
