@@ -17,6 +17,9 @@
 
 $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 
+# Official Build
+REVENGEOS_BUILDTYPE := OFFICIAL
+
 # GApps
 IS_PHONE := true
 TARGET_GAPPS_ARCH := arm
@@ -55,17 +58,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_BOOT_JARS += \
     telephony-ext
 
-# FlipFlap
-#PRODUCT_PACKAGES += \
-#    FlipFlap
-
-# Gestures
-#PRODUCT_PACKAGES += \
-#    org.lineageos.keyhandler
-
-# Jelly
-TARGET_USE_JELLY := true
-
 # Input device
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/idc/sec_e-pen.idc:system/usr/idc/sec_e-pen.idc
@@ -96,6 +88,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/media_profiles.xml:system/etc/media_profiles.xml \
     $(LOCAL_PATH)/configs/media_codecs_performance.xml:system/etc/media_codecs_performance.xml
+
+# Maintainer Name
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.revengeos.maintainer=Jprimero15
 
 # Permissions
 PRODUCT_COPY_FILES += \
