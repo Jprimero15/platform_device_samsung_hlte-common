@@ -17,8 +17,9 @@
 
 $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 
-# Official AEX
-EXTENDED_BUILD_TYPE := OFFICIAL
+# GApps
+IS_PHONE := true
+TARGET_GAPPS_ARCH := arm
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
