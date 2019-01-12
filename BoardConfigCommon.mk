@@ -65,6 +65,7 @@ HWUI_COMPILE_FOR_PERF := true
 # Kernel
 BOARD_KERNEL_BASE := 0x00000000
 BOARD_KERNEL_CMDLINE := console=null androidboot.hardware=qcom user_debug=31 msm_rtb.filter=0x3F androidboot.bootdevice=msm_sdcc.1 pm.sleep_mode=1
+BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
 BOARD_KERNEL_IMAGE_NAME := zImage
 BOARD_KERNEL_PAGESIZE := 2048
 BOARD_KERNEL_SEPARATED_DT := true
@@ -122,7 +123,7 @@ ifeq ($(WITH_TWRP),true)
 endif
 
 # Use Snapdragon LLVM if available on build server
-TARGET_USE_SDCLANG := true
+#TARGET_USE_SDCLANG := true
 
 # Wifi
 BOARD_HAVE_SAMSUNG_WIFI := true

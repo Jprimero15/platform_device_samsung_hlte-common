@@ -289,6 +289,9 @@
           set this config to 7. -->
     <integer name="config_deviceHardwareKeys">71</integer>
 
+    <!-- Enable HW Wake keys -->
+    <integer name="config_deviceHardwareWakeKeys">65</integer> 
+
     <!-- Button Backlight -->
     <bool name="config_button_brightness_support">true</bool>
 
