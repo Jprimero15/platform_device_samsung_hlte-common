@@ -1,6 +1,7 @@
 /*
  * Copyright (C) 2016 The CyanogenMod Project
  * Copyright (C) 2017-2018 The LineageOS Project
+ * Copyright (C) 2019 The AospExtended Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -15,11 +16,11 @@
  * limitations under the License.
  */
 
-package org.lineageos.hardware;
+package org.aospextended.hardware;
 
-import org.lineageos.internal.util.FileUtils;
+import com.android.internal.util.aospextended.FileUtils;
 
-import lineageos.hardware.TouchscreenGesture;
+import aospextended.hardware.TouchscreenGesture;
 
 /**
  * Touchscreen gestures API

@@ -1,5 +1,6 @@
 /*
  * Copyright (C) 2017 The LineageOS Project
+ * Copyright (C) 2019 The AospExtended Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,7 +15,7 @@
  * limitations under the License.
  */
 
-package org.lineageos.settings.device;
+package org.aospextended.settings.device;
 
 import android.content.Context;
 import android.view.KeyEvent;

@@ -52,8 +52,8 @@ PRODUCT_PACKAGES += \
 #    FlipFlap
 
 # Gestures
-#PRODUCT_PACKAGES += \
-#    org.lineageos.keyhandler
+PRODUCT_PACKAGES += \
+    org.aospextended.keyhandler
 
 # Jelly
 TARGET_USE_JELLY := true
