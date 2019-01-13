@@ -1,0 +1,3 @@
+
+# allow dex2oat noatsecure
+allow installd dex2oat:process noatsecure;
