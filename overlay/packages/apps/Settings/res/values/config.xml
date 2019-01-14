@@ -19,5 +19,5 @@
     <bool name="config_show_volumeRockerWake">true</bool>
   
     <!-- Device specific doze package --> 
-    <string name="config_customDozePackage" translatable="false">org.lineageos.settings.devicesettings/org.lineageos.settings.devicesettings.TouchscreenGesturePreferenceActivity</string>
+    <string name="config_customDozePackage" translatable="false">org.lineageos.settings.doze/org.lineageos.settings.doze.SamsungDozeActivity</string>
 </resources>

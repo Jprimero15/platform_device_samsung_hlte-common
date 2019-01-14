@@ -45,7 +45,7 @@ PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 
 # DeviceSettings
 PRODUCT_PACKAGES += \
-    DeviceSettings
+    SamsungDoze
 
 # FlipFlap
 #PRODUCT_PACKAGES += \

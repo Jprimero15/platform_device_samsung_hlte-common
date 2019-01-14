@@ -1,6 +1,5 @@
 /*
  * Copyright (c) 2016 The CyanogenMod Project
- *           (C) 2017 The LineageOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,20 +13,19 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-
-package org.lineageos.settings.devicesettings;
+package org.lineageos.settings.doze;
 
 import android.os.Bundle;
+import android.preference.PreferenceActivity;
 
-import com.android.settingslib.drawer.SettingsDrawerActivity;
+public class SamsungDozeActivity extends PreferenceActivity {
 
-public class TouchscreenGesturePreferenceActivity extends SettingsDrawerActivity {
+    private static final String TAG = "samsung_doze";
 
-    @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        getFragmentManager().beginTransaction()
-                .replace(R.id.content_frame, new TouchscreenGesturePreferenceFragment())
-                .commit();
+
+        getFragmentManager().beginTransaction().replace(android.R.id.content,
+                new TouchscreenGestureSettings(), TAG).commit();
     }
 }
