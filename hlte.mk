@@ -17,12 +17,15 @@
 
 $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 
+# Evolution X
+TARGET_GAPPS_ARCH := arm
+TARGET_MINIMAL_APPS := true
+IS_PHONE := true
+TARGET_USE_OLD_SOUND_PICKER := true
+
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay-lineage
-
-# Havoc-OS Official
-export export HAVOC_BUILD_TYPE=Official
 
 # Boot animation
 TARGET_SCREEN_HEIGHT := 1920
