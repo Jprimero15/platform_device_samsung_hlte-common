@@ -17,7 +17,10 @@
 
 $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 
-# Evolution X
+# Evolution X Official
+export CUSTOM_BUILD_TYPE=OFFICIAL
+
+# Evolution X things
 TARGET_GAPPS_ARCH := arm
 TARGET_MINIMAL_APPS := true
 IS_PHONE := true
