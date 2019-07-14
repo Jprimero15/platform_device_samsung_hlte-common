@@ -20,12 +20,6 @@
   },
   {
     "remote":      "github",
-    "repository":  "LineageOS/android_packages_resources_devicesettings",
-    "target_path": "packages/resources/devicesettings",
-    "branch":      "lineage-16.0"
-  },
-  {
-    "remote":      "github",
     "repository":  "Jprimero15/android_hardware_samsung",
     "target_path": "hardware/samsung",
     "branch":      "pie-x"
