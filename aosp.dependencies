@@ -29,11 +29,5 @@
     "repository":  "Jprimero15/android_device_samsung_qcom-common",
     "target_path": "device/samsung/qcom-common",
     "branch":      "lineage-16.0"
-  },
-  {
-    "remote":      "github",
-    "repository":  "LineageOS/android_packages_apps_FlipFlap",
-    "target_path": "packages/apps/FlipFlap",
-    "branch":      "lineage-16.0"
   }
 ]
