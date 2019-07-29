@@ -43,7 +43,7 @@
 /dev/smd6                 0660   system     system
 /dev/smd7                 0660   bluetooth  bluetooth
 
-#permissions for CSVT
+# permissions for CSVT
 /dev/smd11                0660   radio      radio
 
 /dev/radio0               0640   system     system
