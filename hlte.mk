@@ -15,8 +15,6 @@
 # limitations under the License.
 #
 
-$(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
-
 # Evolution X Official
 export CUSTOM_BUILD_TYPE=OFFICIAL
 
@@ -28,7 +26,6 @@ TARGET_USE_OLD_SOUND_PICKER := true
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
-DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay-lineage
 
 # Boot animation
 TARGET_SCREEN_HEIGHT := 1920
